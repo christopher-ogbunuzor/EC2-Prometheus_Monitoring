@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-west-2"
 }
 
 #securitygroup using Terraform
@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_security_group" "TF_SG" {
   name        = "metrics SG"
   description = "metrics security group using Terraform"
-  vpc_id      = "vpc-08513ae8b191fbe25"
+  vpc_id      = "vpc-034d81f0d908e1df2"
 
   ingress {
     description      = "prometheus"

@@ -9,10 +9,10 @@
 # }
 
 resource "aws_instance" "web1" {
-  ami             = "ami-0f5ee92e2d63afc18"
+  ami             = "ami-0735c191cf914754d"
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.TF_SG.name]
-  key_name = "cn_v1"
+  key_name = "ta-lab-key"
 
   tags = {
     Name = "prometheus"
@@ -23,10 +23,10 @@ resource "aws_instance" "web1" {
 }
 
 resource "aws_instance" "web2" {
-  ami             = "ami-0f5ee92e2d63afc18"
+  ami             = "ami-0735c191cf914754d"
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.TF_SG.name]
-  key_name = "cn_v1"
+  key_name = "ta-lab-key"
 
   tags = {
     Name = "grafana"
