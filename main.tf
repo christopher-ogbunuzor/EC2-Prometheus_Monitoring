@@ -2,8 +2,6 @@ provider "aws" {
   region = "us-west-2"
 }
 
-#securitygroup using Terraform
-
 resource "aws_security_group" "TF_SG" {
   name        = "metrics SG"
   description = "metrics security group using Terraform"
@@ -99,6 +97,5 @@ resource "aws_security_group" "TF_SG" {
 #   cidr_block              = cidrsubnet(var.vpc_cidr, 4, count.index)
 #   map_public_ip_on_launch = true
 #   availability_zone       = data.aws_availability_zones.available.names[count.index]
-
 # }
 

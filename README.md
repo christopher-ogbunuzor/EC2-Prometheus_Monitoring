@@ -1,4 +1,10 @@
-# useful commands
+## future Work
+- use private ip for ec2 in prometheus.yml
+- lock down using my own vpc
+- view metrics for ec2 and plot in grafana
+
+
+## useful commands
 `tree`
 
 `terraform validate`
