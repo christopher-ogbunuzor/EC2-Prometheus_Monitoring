@@ -9,6 +9,7 @@ resource "aws_instance" "prometheus" {
     file("${path.module}/prometheusInstall.sh"),
     file("${path.module}/prometheusFiles.sh"),
     file("${path.module}/prometheusRestart.sh"),
+    file("${path.module}/grafanaInstall.sh"),
   ]))
   
   tags = {
