@@ -2,6 +2,7 @@
 - use private ip for ec2 in prometheus.yml
 - lock down using my own vpc
 - view metrics for ec2 and plot in grafana
+- get grafana dashboard to work
 
 
 ## useful commands
