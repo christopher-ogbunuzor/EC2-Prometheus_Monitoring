@@ -1,8 +1,8 @@
 ## future Work
-[ ] use private ip for ec2 in prometheus.yml
-[x] lock down using my own vpc
-[x] view metrics for ec2 and plot in grafana
-[x] get grafana dashboard to work
+- [ ] use private ip for ec2 in prometheus.yml
+- [x] lock down using my own vpc
+- [x] view metrics for ec2 and plot in grafana
+- [x] get grafana dashboard to work
 
 
 ## Verify stuffs are working
