@@ -1,23 +1,18 @@
 ## future Work
-- use private ip for ec2 in prometheus.yml
-- lock down using my own vpc
-- view metrics for ec2 and plot in grafana
-- get grafana dashboard to work
+[] use private ip for ec2 in prometheus.yml
+[x] lock down using my own vpc
+[x] view metrics for ec2 and plot in grafana
+[x] get grafana dashboard to work
 
 
-## useful commands
-`tree`
+## Verify stuffs are working
+prometheus and grafana are deployed on same EC2 while the other EC2 is used to deploy node exporter
+To view prometheus, `http://IP_prometheusEC2:9090`
+To view grafana, `http://IP_prometheusEC2:3000` and put `http://IP_prometheusEC2:9090` in url when you create grafana prometheus datasource. Dont forget to set to `browser` mode from `server` mode. It should say `data source is working` when you click `save and test`. 
 
-`terraform validate`
+You can also connect to the prometheus server from another grafana instance entirely, you just need to open up port 3000 to it
 
-`terraform fmt`
-
-`terraform plan`
-
-`terraform apply --auto-approve`
-
-`terraform destroy`
-
+## Some useful commands
 `aws ec2 describe-instances --region us-east-1`
 
 `aws ec2 describe-vpcs`

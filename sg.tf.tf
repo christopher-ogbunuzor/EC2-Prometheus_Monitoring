@@ -1,11 +1,7 @@
-provider "aws" {
-  region = "us-west-2"
-}
-
 resource "aws_security_group" "TF_SG" {
   name        = "metrics SG"
   description = "metrics security group using Terraform"
-  vpc_id      = "vpc-034d81f0d908e1df2"
+  vpc_id      = aws_vpc.vpc_01.id
 
   ingress {
     description      = "prometheus"

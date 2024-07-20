@@ -4,3 +4,5 @@
 *.tfstate.backup
 nginx/nginxInstall.sh
 nginx/nginxPromethusExtporter.sh
+id_rsa.pub
+
